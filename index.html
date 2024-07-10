@@ -5,23 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultoria em IA</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="logo">
-            <h1>IA Consultoria</h1>
+            <img src="images/logo.png" alt="Logo da Empresa">
         </div>
         <nav>
             <ul>
                 <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre Nós</a></li>
                 <li><a href="#services">Serviços</a></li>
+                <li><a href="#success-stories">Casos de Sucesso</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home">
+    <section id="home" class="hero">
         <div class="overlay">
             <h1>Bem-vindo à IA Consultoria</h1>
             <p>Transformamos seu negócio com soluções de Inteligência Artificial.</p>
@@ -29,34 +34,83 @@
         </div>
     </section>
 
-    <section id="about">
-        <h2>Sobre Nós</h2>
-        <p>Somos líderes em consultoria de Inteligência Artificial, ajudando empresas a otimizar processos e aumentar a eficiência.</p>
-    </section>
-
-    <section id="services">
-        <h2>Serviços</h2>
-        <div class="service">
-            <h3>Automação de Marketing</h3>
-            <p>Automatize campanhas de e-mail, análise de mídias sociais e criação de conteúdo.</p>
-        </div>
-        <div class="service">
-            <h3>Melhoria de Processos Internos</h3>
-            <p>Use IA para otimizar seus processos internos, desde RPA até análise de dados.</p>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Somos líderes em consultoria de Inteligência Artificial, ajudando empresas a otimizar processos e aumentar a eficiência.</p>
+            <div class="image-container">
+                <img src="images/about.jpg" alt="Sobre Nós">
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contato</h2>
-        <form action="submit_form.php" method="post">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Serviços</h2>
+            <div class="service">
+                <h3>Automação de Marketing</h3>
+                <p>Automatize campanhas de e-mail, análise de mídias sociais e criação de conteúdo.</p>
+            </div>
+            <div class="service">
+                <h3>Melhoria de Processos Internos</h3>
+                <p>Use IA para otimizar seus processos internos, desde RPA até análise de dados.</p>
+            </div>
+            <div class="service">
+                <h3>Chatbots e Atendimento ao Cliente</h3>
+                <p>Implementação de chatbots inteligentes para melhorar o atendimento ao cliente e reduzir custos operacionais.</p>
+            </div>
+            <div class="service">
+                <h3>Análise Preditiva</h3>
+                <p>Utilize a análise preditiva para tomar decisões informadas e estratégicas em seu negócio.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="success-stories" class="success-stories-section">
+        <div class="container">
+            <h2>Casos de Sucesso</h2>
+            <div class="story">
+                <img src="images/success1.jpg" alt="Caso de Sucesso 1">
+                <h3>Empresa X</h3>
+                <p>Ajudamos a Empresa X a aumentar suas vendas em 30% com a automação de marketing.</p>
+            </div>
+            <div class="story">
+                <img src="images/success2.jpg" alt="Caso de Sucesso 2">
+                <h3>Empresa Y</h3>
+                <p>Implementamos chatbots que reduziram os custos de atendimento ao cliente em 40% na Empresa Y.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <h2>Blog</h2>
+            <div class="blog-post">
+                <h3>Título do Post 1</h3>
+                <p>Resumo do post 1 sobre inteligência artificial e suas aplicações.</p>
+                <a href="#">Leia mais</a>
+            </div>
+            <div class="blog-post">
+                <h3>Título do Post 2</h3>
+                <p>Resumo do post 2 sobre automação de processos empresariais.</p>
+                <a href="#">Leia mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contato</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
 
     <footer>
