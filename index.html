@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria em IA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>IA Consultoria</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="overlay">
+            <h1>Bem-vindo à IA Consultoria</h1>
+            <p>Transformamos seu negócio com soluções de Inteligência Artificial.</p>
+            <a href="#contact" class="cta-button">Entre em Contato</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>Somos líderes em consultoria de Inteligência Artificial, ajudando empresas a otimizar processos e aumentar a eficiência.</p>
+    </section>
+
+    <section id="services">
+        <h2>Serviços</h2>
+        <div class="service">
+            <h3>Automação de Marketing</h3>
+            <p>Automatize campanhas de e-mail, análise de mídias sociais e criação de conteúdo.</p>
+        </div>
+        <div class="service">
+            <h3>Melhoria de Processos Internos</h3>
+            <p>Use IA para otimizar seus processos internos, desde RPA até análise de dados.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 IA Consultoria. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
