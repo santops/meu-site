@@ -1,58 +1,53 @@
+/* Estilos gerais */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #111;
-    color: #fff;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 header {
-    background-color: #222;
-    padding: 20px;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
-header .logo img {
-    width: 150px;
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    padding: 10px 15px;
 }
 
-nav ul li a:hover {
-    color: #b45bff;
+header nav ul li a:hover {
+    background-color: #555;
 }
 
 .hero {
     background-image: url('images/hero.jpg');
     background-size: cover;
     background-position: center;
-    position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero .overlay {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 60px;
+    color: #fff;
     text-align: center;
+    padding: 100px 0;
 }
 
 .hero h1 {
@@ -73,53 +68,156 @@ nav ul li a:hover {
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.2em;
+    transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
     background-color: #9d46e3;
 }
 
-section {
-    padding: 60px 20px;
-    text-align: center;
+.about-section {
+    background-color: #fff;
+    padding: 80px 0;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.about-section, .services-section, .success-stories-section, .blog-section, .contact-section {
-    background-color: #222;
-}
-
-h2 {
+.about-section h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-.service, .story, .blog-post {
-    margin-bottom: 40px;
+.about-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.image-container {
+    margin-top: 40px;
 }
 
 .image-container img {
     width: 100%;
+    max-width: 600px;
     height: auto;
-    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
 }
 
-.service h3, .story h3, .blog-post h3 {
-    font-size: 1.8em;
+.services-section {
+    background-color: #f2f2f2;
+    padding: 80px 0;
+}
+
+.services-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.service {
+    margin-bottom: 40px;
+}
+
+.service h3 {
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
+.service p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.clients-section {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.clients-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.client-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.client-logos img {
+    max-width: 200px;
+    margin: 20px;
+}
+
+.contact-section {
+    background-color: #333;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section form label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.contact-section form input[type="text"],
+.contact-section form input[type="email"],
+.contact-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.contact-section form textarea {
+    height: 150px;
+}
+
+.contact-section form button {
+    display: block;
+    padding: 15px 30px;
+    background-color: #b45bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-section form button:hover {
+    background-color: #9d46e3;
+}
+
 footer {
-    background-color: #111;
+    background-color: #222;
     color: #888;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
 }
 
 footer p {
     margin: 0;
+    font-size: 1.1em;
 }
