@@ -3,174 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultoria em IA</title>
+    <title>IA para Negócios - StartSe</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        /* Estilos embutidos para o exemplo */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #111;
-            color: #fff;
-        }
-
-        header {
-            background-color: #222;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header .logo img {
-            width: 150px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.1em;
-        }
-
-        nav ul li a:hover {
-            color: #b45bff;
-        }
-
-        .hero {
-            background-image: url('images/hero.jpg');
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .hero .overlay {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 60px;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 1.5em;
-            margin-bottom: 40px;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #b45bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-        }
-
-        .cta-button:hover {
-            background-color: #9d46e3;
-        }
-
-        section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .about-section, .services-section, .success-stories-section, .blog-section, .contact-section {
-            background-color: #222;
-        }
-
-        h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .service, .story, .blog-post {
-            margin-bottom: 40px;
-        }
-
-        .image-container img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .service h3, .story h3, .blog-post h3 {
-            font-size: 1.8em;
-            margin-bottom: 10px;
-        }
-
-        footer {
-            background-color: #111;
-            color: #888;
-            text-align: center;
-            padding: 20px;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-        }
-
-        footer p {
-            margin: 0;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo da Empresa">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#clients">Clientes</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre Nós</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#success-stories">Casos de Sucesso</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
     </header>
 
     <section id="home" class="hero">
-        <div class="overlay">
-            <h1>Bem-vindo à IA Consultoria</h1>
-            <p>Transformamos seu negócio com soluções de Inteligência Artificial.</p>
+        <div class="container">
+            <h1>IA para Negócios</h1>
+            <p>Transforme sua empresa com soluções avançadas de Inteligência Artificial.</p>
             <a href="#contact" class="cta-button">Entre em Contato</a>
         </div>
     </section>
 
     <section id="about" class="about-section">
         <div class="container">
-            <h2>Sobre Nós</h2>
-            <p>Somos líderes em consultoria de Inteligência Artificial, ajudando empresas a otimizar processos e aumentar a eficiência.</p>
+            <h2>Sobre</h2>
+            <p>Conheça nossa missão de ajudar empresas a adotarem Inteligência Artificial de forma eficiente e inovadora.</p>
             <div class="image-container">
-                <img src="images/about.jpg" alt="Sobre Nós">
+                <img src="images/about.jpg" alt="Sobre">
             </div>
         </div>
     </section>
@@ -179,52 +46,28 @@
         <div class="container">
             <h2>Serviços</h2>
             <div class="service">
-                <h3>Automação de Marketing</h3>
-                <p>Automatize campanhas de e-mail, análise de mídias sociais e criação de conteúdo.</p>
+                <h3>Análise de Dados</h3>
+                <p>Utilizamos IA para extrair insights valiosos dos seus dados empresariais.</p>
             </div>
             <div class="service">
-                <h3>Melhoria de Processos Internos</h3>
-                <p>Use IA para otimizar seus processos internos, desde RPA até análise de dados.</p>
+                <h3>Otimização de Processos</h3>
+                <p>Aprimoramos processos internos com automação e aprendizado de máquina.</p>
             </div>
             <div class="service">
-                <h3>Chatbots e Atendimento ao Cliente</h3>
-                <p>Implementação de chatbots inteligentes para melhorar o atendimento ao cliente e reduzir custos operacionais.</p>
-            </div>
-            <div class="service">
-                <h3>Análise Preditiva</h3>
-                <p>Utilize a análise preditiva para tomar decisões informadas e estratégicas em seu negócio.</p>
+                <h3>Chatbots Inteligentes</h3>
+                <p>Implementação de chatbots para melhorar o atendimento ao cliente.</p>
             </div>
         </div>
     </section>
 
-    <section id="success-stories" class="success-stories-section">
+    <section id="clients" class="clients-section">
         <div class="container">
-            <h2>Casos de Sucesso</h2>
-            <div class="story">
-                <img src="images/success1.jpg" alt="Caso de Sucesso 1">
-                <h3>Empresa X</h3>
-                <p>Ajudamos a Empresa X a aumentar suas vendas em 30% com a automação de marketing.</p>
-            </div>
-            <div class="story">
-                <img src="images/success2.jpg" alt="Caso de Sucesso 2">
-                <h3>Empresa Y</h3>
-                <p>Implementamos chatbots que reduziram os custos de atendimento ao cliente em 40% na Empresa Y.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="blog" class="blog-section">
-        <div class="container">
-            <h2>Blog</h2>
-            <div class="blog-post">
-                <h3>Título do Post 1</h3>
-                <p>Resumo do post 1 sobre inteligência artificial e suas aplicações.</p>
-                <a href="#">Leia mais</a>
-            </div>
-            <div class="blog-post">
-                <h3>Título do Post 2</h3>
-                <p>Resumo do post 2 sobre automação de processos empresariais.</p>
-                <a href="#">Leia mais</a>
+            <h2>Clientes</h2>
+            <div class="client-logos">
+                <img src="images/client1.png" alt="Cliente 1">
+                <img src="images/client2.png" alt="Cliente 2">
+                <img src="images/client3.png" alt="Cliente 3">
+                <!-- Adicione mais logos de clientes conforme necessário -->
             </div>
         </div>
     </section>
@@ -246,7 +89,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 IA Consultoria. Todos os direitos reservados.</p>
+            <p>&copy; 2024 IA para Negócios - StartSe. Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>
