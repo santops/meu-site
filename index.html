@@ -8,6 +8,137 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos embutidos para o exemplo */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+        }
+
+        header {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header .logo img {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        nav ul li a:hover {
+            color: #b45bff;
+        }
+
+        .hero {
+            background-image: url('images/hero.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero .overlay {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 60px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #b45bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        .cta-button:hover {
+            background-color: #9d46e3;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-section, .services-section, .success-stories-section, .blog-section, .contact-section {
+            background-color: #222;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .service, .story, .blog-post {
+            margin-bottom: 40px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .service h3, .story h3, .blog-post h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #111;
+            color: #888;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -114,7 +245,9 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 IA Consultoria. Todos os direitos reservados.</p>
+        <div class="container">
+            <p>&copy; 2024 IA Consultoria. Todos os direitos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>
